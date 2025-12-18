@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <title>CollectionsGB</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="bg-dark m-0 p-0">
+    <header class="topbar">
+        <div class="logo">
+            <img src="img/icono.png" alt="Logo">
+            <span>CollectionsGB</span>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html" class="active">INICIO</a>
+            <a href="gestion.html">GESTION</a>
+            <a href="perfil.html">PERFIL</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <h2>Gestión de productos</h2>
+            <label for="codigo">Código:</label>
+            <input type="text" name="codigo" id="codigo" placeholder="Ingrese el código">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre">
+
+            <label for="descripcion">Descripcion:</label>
+            <textarea id="descripcion" name="descripcion" rows="5" placeholder="Ingrese la descripción del producto"></textarea>
+
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria">
+                <option value="">--- Seleccione ---</option>
+                <option value="1">Figuras</option>
+                <option value="2">Anime</option>
+                <option value="3">Marvel / DC</option>
+                <option value="4">Videojuegos</option>
+            </select>
+
+            <label for="marca">Marca:</label>
+            <input type="text" name="marca" id="marca" placeholder="Ingrese la marca">
+
+            <label>Estado:</label>
+            <div class="estado-horizontal">
+                <label>Activo<input type="radio" name="estado" value="activo"></label>
+                <label>Inactivo<input type="radio" name="estado" value="inactivo"></label>
+            </div>
+
+            <label for="fechaIngreso">Fecha de ingreso:</label>
+            <input type="date" name="fechaIngreso" id="fechaIngreso">
+
+            <button onclick="agregarFila()">Crear</button>
+
+            <table id="datos">
+                <Thead>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Categoría</th>
+                    <th>Marca</th>
+                    <th>Estado</th>
+                    <th>Fecha de Ingreso</th>
+                    <th>Acciones</th>
+                </Thead>
+
+                <Tbody>
+                    <!-- Las filas agregadas aparecerán aquí -->
+                </Tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+<footer>
+    <p>&copy; 2025 - Todos los derechos reservados</p>
+</footer>
+</html>

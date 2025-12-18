@@ -1,0 +1,231 @@
+html, body {
+    margin: 0;
+    padding: 0; /*relleno*/
+    height: 100%;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+/*header/topbar*/
+.topbar {
+    background: linear-gradient(#000, #333);
+    display: flex; /*para organizar y alinear elementos fácilmente*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+/*--logo--*/
+.logo {
+    display: flex; 
+    align-items: center;
+    gap: 10px; /*para definir el espacio entre los elementos hijos de un contenedor*/
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+/*--menu--*/
+.menu a {
+    color: red;
+    text-decoration: none; /*para quitar el subrayado del texto*/
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+/*--carrusel--*/
+.carousel {
+    background-color: #000;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: contain; /*para que la imagen se muestre completa dentro del contenedor
+                           sin recortarse y sin deformarse*/
+}
+
+/*--formulario--*/
+.formulario {
+    display: flex;
+    flex-direction: column; /*para colocar los elems uno debajo de otro*/
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+label {
+    display: block; /*para ocupar todo el ancho y bajar a la siguiente línea*/
+    margin-top: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input, textarea, select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/*--campos de estado--*/
+.estado-horizontal {
+    background-color: #fff;
+    padding: 3px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.estado-horizontal label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    color: #000;
+}
+
+/*--botones--*/
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(10, 9, 9);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+}
+
+.boton {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.boton-eliminar {
+    background-color: crimson;
+    color: #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.boton-eliminar:hover {
+    background-color: rgb(94, 40, 51);
+}
+
+/*--tabla--*/
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(221, 207, 207);
+}
+
+/*--contenedor--*/
+.contenedor {
+    background-color: #962727;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/*--iconos--*/
+i {
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.icono-eliminar {
+    color: red;
+}
+
+.icono-eliminar:hover {
+    color: black;
+}
+
+.icono-ver {
+    color: aquamarine;
+}
+
+.icono-ver:hover {
+    color: blue;
+}
+
+/*--perfil--*/
+.perfil-contenedor {
+    background-color: #962727;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.perfil-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover; /*para que la imagen llene el contenedor sin deformarse*/
+    margin-bottom: 1px;
+    border: 5px solid #000;
+}
+
+.perfil-rol { /*texto "Gestión de productos"*/
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.perfil-info p { /*usuario y correo*/
+    color: #fff;
+    margin: 8px 0;
+}
+
+.boton{
+    border-radius: 10px;
+}
+
+/*--footer--*/
+footer {
+    background: linear-gradient(#333, #000);
+    color: red;
+    text-align: center;
+    padding: 1em;
+    font-size: 18px;
+    font-weight: bold;
+}
